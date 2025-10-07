@@ -1,53 +1,379 @@
+/*common styling syntaxes throughout this css*/ 
 * {
-  margin: 0;
-  padding: 0;
-  /* max-width: 100%; */
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+
 }
+body {
+	font-size: 20px; 
+	font-family: 'Montserrat', sans-serif;
+}
+
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+
 }
-/* header starts */
-.header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
+ .brief-description {
+	font-size: 40px;
 }
-.list-rapper {
+.prices-container {
+    font-size: 15px;
+}
+.links-holder ul {
+	list-style: none;
+}
+.links-holder {
+	padding: 15px 0;
+}
+.links-holder ul li {
+	display: inline-block;
+	padding-right: 20px;
+}
+.links-holder ul li a {
+	color: #06c;
+	text-decoration: none;
+}
+.links-holder ul li a:hover {
+	color: #000;
+}
+.links-holder ul li a::after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+  content: "\f105";
+  padding-left: 10px;
+
+}
+.links-on-black li a:hover {
+  color: white !important;
+}
+/*.Airpods-pro-container.links-holder  a :hover {
+    color: #fafafa; (how can i change links color in the dark)
+}*/
+
+ /* header styling */
+.header-container {
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+    font-size: .75em;
+  
+}
+.header-links-container a {
+    color:white;
+ text-decoration: none;
+}
+.header-links-container {
+    width: 980px;
+    margin: 0 auto;
+
+}
+.header-container .header-links-container ul {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+
+   
+}
+.header-container .header-links-container ul li {
+   display: inline-block;
+   padding:12px 0 8px;
+   opacity: 0.8;
+    height: 25px;
+ 
+  
+}
+.logo-icon, .search-icon, .cart-icon {
+    width: 18px;
+    display: block;
+}
+
+.header-container .header-links-container ul li:hover {
+    opacity: 1;
+}
+/*.header-wrapper .header-links-wrapper ul li .logo-icon {
+    padding: 12px o 10px;
+}
+.header-wrapper .header-links-wrapper ul li .search-icon {
+    padding: 14px o 08px;
+}
+.header-wrapper .header-links-wrapper ul li .cart-icon{
+    padding: 12px o 10px;
+}*/
+
+/* the first section/macbook pro section starts here */
+
+.the-first-Macbook-Section {
+    background-color: #fafafa;
+    text-align: center;
+	padding: 25px 0;
+}
+
+.model {
+	font-size: 15px;
+}
+.product-title {
+	font-weight: 700;
+	font-size: 56px;
+}
+
+
+/* Second Product Section */
+.iphone-11-pro-section {
+    background-image: url("../images/home/iphone11-pro-bg.jpg");
+      height: 400px;
+    background-position: center;
+
+    background-size: cover;
+	text-align: center;
+     padding: 40px 20px;
+	color: #fff;
+    }
+
+.description-wrapper {
+    font-size: 26px;
+}
+/* third Product Section */
+.iphone-11-section {
+ background-image: url("../images/home/iphone11-bg.jpg");
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 20px;
+     padding: 40px 20px;
+     height: 400px;
+    
+}
+.iphone-11, .iphone-11-pro {
+    font-size:60px ;
+    font-weight: 600;
+
+   
+}
+/* Watch and card section Section */
+.watch-and-card-section {
+    display: flex;
+    margin-top: 20px; margin-bottom: 20px;
+    gap:10px;
+    justify-content: center;
+     height: 550px;
+
+}
+.apple-watch-wrapper {
+    text-align: center;
+    background-image: url("../images/home/watch-series-5.jpg");
+    background-size: cover;
+    background-position: center;
+
+     width: 100%;
+}
+.apple-card-wrapper {
+    background-image: url("../images/home/apple-card.jpg");
+     background-size: cover;
+     background-position: center;
+  width: 100%;
+    text-align: center;
+   
+
+}
+/* Apple TV airpods  Section */
+ .AppleTV-and-Airpods-pro-section {
+    display: flex;
+   gap:20px;
+    justify-content: center;
+   -webkit-box-pack: justify;
+    height: 550px;
+ }
+.AppleTV-container {
+    background-image: url("../images/home/apple-tv-background.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+     width: 100%;
+
+    
+}
+.Airpods-pro-container {
+    background-image: url("../images/home/air-pods.jpg");
+   background-repeat: no-repeat;
+  background-position: bottom;
+    text-align: center;
+   color: white;
+   background-size: initial;
+ background-color: black;
+ width: 100%;
+ 
+}
+.Servant-logo {
+margin-top: 200px;
+
+}
+
+.Airpods-title  {
+    font-weight: 700;
+	font-size: 56px;
+}
+
+.watch-more-wrapper ul {
+    padding-top: 200px;
+}
+
+.watch-more-wrapper ul li a {
+    text-decoration: none;
+	font-size: 0.85em;
+ 
+
+}
+.watch-more-wrapper a::after{
+    font-family: "FontAwesome";
+  font-weight: 900;
+  content: "\f144";
+  padding-left: 15px;
+}
+
+/*Macbook and iPad Section */
+.MacBook-and-ipad-section  {
+    display: flex;
+    gap:20px;
+       background-size: cover;
+     background-position: bottom;
+    justify-content: center;
+   -webkit-box-pack: justify;
+    height: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.second-Macbook-container {
+    background-image: url(../images/home/macbook-pro.jpg);
+width:  100%;
+  height: 550px;
+gap: 20px;
+ 
+background-position: bottom;
+text-align: center;
+background-repeat: no-repeat;
+ margin-top: 20px;
+    margin-bottom: 20px;
+}
+.The-new-iPad-container {
+    width:  100%;
+  text-align: center;
+  background-image: url(../images/home/new-ipad.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+.Macbook-pro-2-title {
+    	font-weight: 700;
+	font-size: 56px;
+}
+.brief-description-2 {
+    font-size: 20px;
+}
+.second-model  {
+    font-size:17px;
+    font-family: sans-serif;
+}
+
+
+
+/* Footer Styling */
+.footer-wrapper {
+    background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 14px;
+ justify-items: center;
+ width: 100%;
+ text-align: center;
+}
+.footer-wrapper ul {
+	list-style: none;
+	padding-bottom: 20px;
+ 
+}
+.upper-text-container {
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  padding: 17px 0 20px;
+  text-align: center;
   width: 980px;
-  padding: 15px 0;
-  margin: 0 auto;
 }
-.list-rapper ul {
-  display: flex;
-  color: #fff;
+.upper-text-container a {
+    text-decoration: none;
+    color: #515154; 
+}
+.upper-text-container a:hover{
+    text-decoration:underline
+
+}
+.footer-links-wrapper a:hover {
+	text-decoration: underline;
+}
+.footer-links-wrapper a {
+    text-decoration: none;
+    color: #515154; 
+
+}
+.footer-links-wrapper {
+    width: 1000px;
+    text-align: center;
+    display: flex;  
+   -webkit-box-pack: justify;
   justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  font-weight: 200;
-  font-size: 10.5px;
-  list-style: none;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: serif;
+
+
+ margin-right: 10px;
+  
+}
+.footer-links-wrapper h3 {
+	font-size: 15px;
+	font-weight: 600;
 }
 
-.list-rapper img {
-  width: 18px;
+.more-info-wrapper {
+  border-bottom: 1px solid #d2d2d7;
+ padding-bottom: 10px;
+	margin-bottom: 10px;
+  text-align:  center;
 }
-.list-rapper ul li img :hover {
-  opacity: 0.8;
-  color: blue;
+.more-info-wrapper a {
+ color: #551a88;
 }
-.header .list-rapper ul li :hover {
-  opacity: 1;
-  color: white;
+.privacy-and-terms-link-wrapper ul li {
+  display:inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ccc;
+}
+.privacy-and-terms-link-wrapper ul li:last-child {
+	border-right: 0px;
+}
+.privacy-and-terms-link-wrapper a {
+color: #515154;
+	text-decoration: none;
+}
+.privacy-and-terms-link-wrapper li:hover {
+    text-decoration: underline;
+
+}
+.last-section {
+    display:flex;
+    width: 1200px;
+    text-align: center;
+    justify-content: center;
 }
 
-.list-rapper a {
-  text-decoration: none;
-  list-style: none;
-  color: (255,255,255);
+.copyright-wrapper, .privacy-and-terms-link-wrapper, .flag-country-wrapper {
+    display:inline-block;
 }
-.list-rapper :hover {
-  opacity: 1;
+
+.copyright-wrapper, .privacy-and-terms-link-wrapper {
+    margin-right:30px ;
+}
+
+.country-name, .flag-wrapper  {
+	display: inline-block;
+    
 }
