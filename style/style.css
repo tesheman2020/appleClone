@@ -46,7 +46,7 @@ img {
 .list-rapper a {
   text-decoration: none;
   list-style: none;
-  color: (255,255,255);
+  color: (255, 255, 255);
 }
 .list-rapper :hover {
   opacity: 1;
