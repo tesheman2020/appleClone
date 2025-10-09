@@ -46,8 +46,76 @@ img {
 .list-rapper a {
   text-decoration: none;
   list-style: none;
-  color: (255,255,255);
+  color: (255, 255, 255);
 }
 .list-rapper :hover {
   opacity: 1;
 }
+/* section one start */
+
+/* section one end  */
+
+/* section 2 iphone 11 start */
+.section-2-iphone11-pro {
+  background-image: url(../images/home/iphone11-pro-bg.jpg);
+  height: 680px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 65px 20px;
+}
+.section-2-contentcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-2-paragraph-1 {
+  font-size: 56px;
+  font-weight: 600;
+  color: white;
+}
+#section-2-paragraph-2 {
+  font-size: 26px;
+  padding: 12px 0 0px 0;
+  color: white;
+}
+#section-1-paragraph-3 {
+  font-size: 17px;
+  margin: 10px 0 18px 0;
+  color: rgb(134, 134, 139);
+}
+#section-1-anchors {
+  padding: 15px 0;
+} /* end of section 2 */
+/* section 3 starts here */
+.section-3-iphone-11 {
+  background-image: url(../images/home/iphone11-bg.jpg);
+  height: 680px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 65px 0px 10px 0px;
+  margin-bottom: 30px;
+}
+.section-3-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-3-paragraph-1 {
+  font-size: 56px;
+  font-weight: 600;
+  color: black;
+}
+#section-3-paragraph-2 {
+  font-size: 26px;
+  padding: 12px 0 0px 0;
+  color: black;
+}
+#section-3-paragraph-3 {
+  font-size: 17px;
+  margin: 10px 0 18px 0;
+  color: rgb(134, 134, 139);
+} /* end of
+section 3 */
